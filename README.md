@@ -5,7 +5,7 @@
 
 ## Jens van Wijhe
 
-🎯 Specialist in e-commerce en web development.
+🎯  Specialist in e-commerce en web development.
 
 - [Jens van Wijhe](https://www.jvw.dev).
 - [Beter Bekend](https://www.beterbekend.nl).
