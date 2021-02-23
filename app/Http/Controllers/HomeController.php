@@ -22,6 +22,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@jensvanwijhe');
 
         SEOTools::jsonLd()->addImage('https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4');
+        SEOTools::jsonLd()->setType('Person');
+
         $links = array(
             'Beter Bekend'  => 'https://www.beterbekend.nl',
             'Grrp'  => 'https://www.grrp.me/u/jens',
