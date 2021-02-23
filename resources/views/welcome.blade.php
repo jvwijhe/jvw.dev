@@ -13,12 +13,11 @@
                 <h1 class="text-5xl font-heading">Jens van Wijhe</h1>
                 <div class="my-4">
                     <p class="my-1">🎯 E-commerce and web development.</p>
-                    <p class="my-1">
-                    Founder of <a href="https://www.beterbekend.nl" class="text-blue-500 font-medium hover:underline">Beter Bekend</a>
-                    </p>
+                    <p class="my-1">👔 Working @ <a href="https://www.beterbekend.nl" class="text-blue-500 font-medium hover:underline">Beter Bekend</a></p>
+                    <p class="my-1">📍 The Netherlands.</p>
                 </div>
 
-                <ul class="my-6 text-center justify-center items-center flex">
+                <ul class="my-4 text-center justify-center items-center flex">
                     <li class="flex">
                         <a href="https://www.twitter.com/jensvanwijhe" class="m-auto flex text-center hover:underline">
                             <span class="text-blue-500 h-5 w-5"><x-twitter-icon></x-twitter-icon></span>
