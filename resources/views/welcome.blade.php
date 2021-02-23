@@ -4,17 +4,20 @@
     <div class="m-auto max-w-lg flex items-center ">
         <div class="text-center m-auto">
             <div class="text-center m-auto">
-            <img src="https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4" 
-            class="w-24 h-24 rounded-full mx-auto"
-            />
+                <img src="https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4" 
+                class="w-24 h-24 rounded-full mx-auto"
+                />
             </div>
 
             <div class="my-6">
                 <h1 class="text-5xl font-heading">Jens van Wijhe</h1>
                 <div class="my-4">
-                    <p class="my-1">🎯 E-commerce and web development.</p>
-                    <p class="my-1">👔 Working @ <a href="https://www.beterbekend.nl" class="text-blue-500 font-medium hover:underline">Beter Bekend</a></p>
-                    <p class="my-1">📍 The Netherlands.</p>
+                    <p class="my-2">Hi! I'm Jens van Wijhe, a full-stack web developer and entrepreneur.</p>
+                </div>
+
+                <div class="my-6">
+                    <p class="my-2">👔 Founder of <a href="https://www.beterbekend.nl" class="text-blue-500 font-medium hover:underline">Beter Bekend</a></p>
+                    <p class="my-2">📍 The Netherlands.</p>
                 </div>
 
                 <ul class="my-4 text-center justify-center items-center flex">
@@ -36,7 +39,10 @@
 </section>
 
     <section class="py-24 px-4 sm:px-0 border-gray-100 border-t border-dashed">
-        <div class="m-auto max-w-lg flex items-center ">
+
+        <h2 class="text-3xl font-heading">More about me</h2>
+
+        <div class="my-4 m-auto max-w-lg flex items-center ">
             <ul class="w-full">
                 @foreach($links as $label => $link)
                     <li class="mb-6 w-full">
@@ -50,5 +56,16 @@
                 @endforeach
             </ul>
         </div>
+
+        <div class="my-4">
+            <p class="my-2">Currently I am working at Beter Bekend, a web and e-commerce agency based in Elburg, The Netherlands.</p>
+            <p class="my-2">I like to work with Laravel, Vuejs and Tailwindcss</p>
+        </div>
+
+
+        <div class="mt-12">
+            <p class="my-2 opacity-20 text-xs">Website still under development</p>
+        </div>
+
     </section>
 </x-guest-layout>
