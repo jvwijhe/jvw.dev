@@ -9,7 +9,7 @@
             />
             </div>
 
-            <div class="mt-4">
+            <div class="my-6">
                 <h1 class="text-5xl font-heading">Jens van Wijhe</h1>
                 <div class="my-4">
                     <p class="my-1">🎯 E-commerce and web development.</p>
@@ -18,7 +18,7 @@
                     </p>
                 </div>
 
-                <ul class="mt-4 text-center justify-center items-center flex">
+                <ul class="my-6 text-center justify-center items-center flex">
                     <li class="flex">
                         <a href="https://www.twitter.com/jensvanwijhe" class="m-auto flex text-center hover:underline">
                             <span class="text-blue-500 h-5 w-5"><x-twitter-icon></x-twitter-icon></span>
@@ -40,7 +40,7 @@
         <div class="m-auto max-w-lg flex items-center ">
             <ul class="w-full">
                 @foreach($links as $label => $link)
-                    <li class="mb-4 w-full">
+                    <li class="mb-6 w-full">
                         <a href="{{$link}}" class="bg-gray-900 p-6 rounded text-gray-100 flex justify-between">
                             <span>{{$label}}</span>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>

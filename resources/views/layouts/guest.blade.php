@@ -20,7 +20,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-black text-white">
+    <body class="bg-black text-white text-lg">
         <div class=" antialiased">
             {{ $slot }}
         </div>
