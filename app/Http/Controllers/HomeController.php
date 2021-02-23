@@ -26,7 +26,7 @@ class HomeController extends Controller
 
         $links = array(
             'Beter Bekend'  => 'https://www.beterbekend.nl',
-            'Grrp'  => 'https://www.grrp.me/u/jens',
+            'Grrp.me'  => 'https://www.grrp.me/u/jens',
             'Hiking blog'  => 'https://www.jens.global',
         );
         return view('welcome', [
