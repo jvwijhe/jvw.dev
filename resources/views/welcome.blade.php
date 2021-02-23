@@ -41,9 +41,11 @@
             <ul class="w-full">
                 @foreach($links as $label => $link)
                     <li class="mb-6 w-full">
-                        <a href="{{$link}}" class="bg-gray-900 p-6 rounded text-gray-100 flex justify-between">
+                        <a href="{{$link}}" class="bg-gray-800 p-6 rounded text-gray-100 flex justify-between">
                             <span>{{$label}}</span>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <span class="text-gray-500">
+                            <svg class="w-6 h-6" fill="" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </span>
                         </a>
                     </li>
                 @endforeach

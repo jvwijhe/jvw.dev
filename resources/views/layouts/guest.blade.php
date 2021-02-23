@@ -26,7 +26,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-black text-white text-lg">
+    <body class="bg-gray-900 text-gray-100 text-lg">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PQZ28T"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
