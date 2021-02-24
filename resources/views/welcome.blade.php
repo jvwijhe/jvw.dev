@@ -39,9 +39,9 @@
 </section>
 
     <section class="py-24 px-4 sm:px-0 border-gray-100 border-t border-dashed">
-
-        <h2 class="text-3xl font-heading">More about me</h2>
-
+        <div class="my-4 mx-auto max-w-lg">
+        <h2 class="text-3xl font-heading">More about me 👇</h2>
+        </div>
         <div class="my-4 m-auto max-w-lg flex items-center ">
             <ul class="w-full">
                 @foreach($links as $label => $link)
@@ -57,13 +57,13 @@
             </ul>
         </div>
 
-        <div class="my-4">
+        <div class="my-4 mx-auto max-w-lg">
             <p class="my-2">Currently I am working at Beter Bekend, a web and e-commerce agency based in Elburg, The Netherlands.</p>
             <p class="my-2">I like to work with Laravel, Vuejs and Tailwindcss</p>
         </div>
 
 
-        <div class="mt-12">
+        <div class="my-4 mx-auto max-w-lg">
             <p class="my-2 opacity-20 text-xs">Website still under development</p>
         </div>
 

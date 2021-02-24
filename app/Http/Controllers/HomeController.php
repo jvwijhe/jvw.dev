@@ -25,9 +25,9 @@ class HomeController extends Controller
         SEOTools::jsonLd()->setType('Person');
 
         $links = array(
-            'Beter Bekend'  => 'https://www.beterbekend.nl',
-            'Grrp.me'  => 'https://www.grrp.me/u/jens',
-            'Hiking blog'  => 'https://www.jens.global',
+            '👨‍💻 Beter Bekend'  => 'https://www.beterbekend.nl',
+            '🔗 Grrp.me'  => 'https://www.grrp.me/u/jens',
+            '🥾 Hiking blog'  => 'https://www.jens.global',
         );
         return view('welcome', [
             'links' => $links
