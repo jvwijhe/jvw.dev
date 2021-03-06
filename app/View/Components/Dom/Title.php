@@ -40,7 +40,6 @@ class Title extends Component
     public function heading(){
         $type =  collect($this->content)->get('type');
         $replaced = Str::of($type)->replace('heading', 'h');
-
         return $replaced;
     }
 

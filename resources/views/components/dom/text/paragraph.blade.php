@@ -1,0 +1,1 @@
+<p class="mb-4 text-gray-200">{{$content->text}}</p>

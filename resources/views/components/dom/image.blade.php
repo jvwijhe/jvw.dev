@@ -4,7 +4,7 @@
             <img 
             src="{{$image->url}}" 
             alt="{{$image->alt}}"
-            class="object-cover object-center w-full h-auto" />
+            class="object-cover object-center w-full h-72 lg:h-auto" />
     </div>
 </section>
 @endif
