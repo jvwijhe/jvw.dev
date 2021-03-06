@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!-- Hi! I'm Jens van Wijhe, a full-stack web developer and entrepreneur.. -->
+<!-- If you need any help while ripping my code, feel free to tweet me @jensvanwijhe -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,9 +33,12 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PQZ28T"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- End Google Tag Manager (noscript) -->
-
+        
+        <x-layouts.header />
         <div class=" antialiased">
             {{ $slot }}
         </div>
+
+        <x-layouts.footer />
     </body>
 </html>

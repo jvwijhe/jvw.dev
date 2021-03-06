@@ -10,10 +10,10 @@
             </div>
 
             <div class="my-6">
-                <h1 class="text-5xl font-heading">Jens van Wijhe</h1>
+                {{-- <h1 class="text-5xl font-heading">Jens van Wijhe</h1> --}}
+                <x-dom.title class="text-5xl font-heading" :content="$document->data->title" />
                 <div class="my-4">
-                    <p class="my-2">Hi! I'm Jens van Wijhe, a full-stack web developer and entrepreneur.</p>
-                </div>
+                <x-dom.rich-text class="my-2" :content="$document->data->text" />
 
                 <div class="my-6">
                     <p class="my-2">👔 Founder of <a href="https://www.beterbekend.nl" class="text-blue-500 font-medium hover:underline">Beter Bekend</a></p>
@@ -38,34 +38,25 @@
     </div>
 </section>
 
-    <section class="py-24 px-4 sm:px-0 border-gray-100 border-t border-dashed">
-        <div class="my-4 mx-auto max-w-lg">
-        <h2 class="text-3xl font-heading">More about me 👇</h2>
-        </div>
-        <div class="my-4 m-auto max-w-lg flex items-center ">
-            <ul class="w-full">
-                @foreach($links as $label => $link)
-                    <li class="mb-6 w-full">
-                        <a href="{{$link}}" class="bg-gray-800 p-6 rounded text-gray-100 flex justify-between">
-                            <span>{{$label}}</span>
-                            <span class="text-gray-500">
-                            <svg class="w-6 h-6" fill="" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
+        <section class="my-12 lg:my-24">
+            <div class="container max-w-lg mx-auto mb-6 text-left m-auto">
+                <h2 class="text-3xl font-heading">About me 📚</h2>
+            </div>
+            <div class="container max-w-lg mx-auto mb-6">
+                    <x-blog.blog-card  :blog="$blog"/>
+            </div> 
 
-        <div class="my-4 mx-auto max-w-lg">
-            <p class="my-2">Currently I am working at Beter Bekend, a web and e-commerce agency based in Elburg, The Netherlands.</p>
-            <p class="my-2">I like to work with Laravel, Vuejs and Tailwindcss</p>
-        </div>
+            <div class="container max-w-lg mx-auto mb-6 text-left m-auto flex justify-start">
+                <a href="{{route('blogs.index')}}" class="bg-gray-800 p-6 rounded text-gray-100 flex items-center">
+                    <span class="text-1xl font-heading" >Read more</span>
+                    <span class="text-gray-500 ml-2">
+                        <svg class="w-6 h-6" fill="" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+            </div>
+    
+        </section>
 
-
-        <div class="my-4 mx-auto max-w-lg">
-            <p class="my-2 opacity-20 text-xs">Website still under development</p>
-        </div>
-
-    </section>
+<x-dom.flexible :content="$document->data->body" />
+  
 </x-guest-layout>

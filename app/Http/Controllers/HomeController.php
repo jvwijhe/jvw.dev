@@ -5,6 +5,14 @@ use Artesaos\SEOTools\Facades\SEOTools;
 
 use Illuminate\Http\Request;
 
+use Prismic\Api;
+use Prismic\LinkResolver;
+use Prismic\Predicates;
+
+// use Prismic\Dom\RichText;
+use Prismic\Dom\RichText;
+use Prismic\Dom\Link;
+
 class HomeController extends Controller
 {
     public function show(){
@@ -24,13 +32,20 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4');
         SEOTools::jsonLd()->setType('Person');
 
-        $links = array(
-            '👨‍💻 Beter Bekend'  => 'https://www.beterbekend.nl',
-            '🔗 Grrp.me'  => 'https://www.grrp.me/u/jens',
-            '🥾 Hiking blog'  => 'https://www.jens.global',
-        );
+
+        $url = "https://jvwdev.cdn.prismic.io/api/v2";
+        $token = env("PRISMIC_ACCESS_TOKEN", false);
+        $api = Api::get($url, $token);
+        // $response = $api->query(Predicates::at('document.type', 'blog'));
+        $response = $api->query(Predicates::at('document.type', 'homepage'));
+        $document = $response->results[0];
+        
+        $blog = $api->getByUID('blog','hello-world');
+
+
         return view('welcome', [
-            'links' => $links
+            'blog' => $blog,
+            'document' => $document
         ]);
     }
 }
