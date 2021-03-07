@@ -18,8 +18,8 @@ class BlogController extends Controller
     
     public function index(){
 
-        // SEOTools::setTitle('Jens van Wijhe');
-        // SEOTools::setDescription('🎯 Specialist in e-commerce en web development. Eigenaar van Beter Bekend.');
+        SEOTools::setTitle('Blog | Jens van Wijhe');
+        SEOTools::setDescription('I blog about web development.');
         // SEOTools::opengraph()->setUrl('https://www.jvw.dev');
         // // SEOTools::setCanonical('https://codecasts.com.br/lesson');
         // SEOTools::opengraph()->addProperty('type', 'profile')->setProfile([
