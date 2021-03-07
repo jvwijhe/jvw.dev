@@ -37,10 +37,13 @@
         </div>
     </div>
 </section>
+ 
+<x-dom.flexible :content="$document->data->body" />
+
 
         <section class="my-12 lg:my-24">
             <div class="container max-w-lg mx-auto mb-6 text-left m-auto">
-                <h2 class="text-3xl font-heading">About me 📚</h2>
+                <h2 class="text-3xl font-heading">Blog 📚</h2>
             </div>
             <div class="container max-w-lg mx-auto mb-6">
                     <x-blog.blog-card  :blog="$blog"/>
@@ -57,6 +60,5 @@
     
         </section>
 
-<x-dom.flexible :content="$document->data->body" />
   
 </x-guest-layout>

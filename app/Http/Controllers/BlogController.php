@@ -54,20 +54,21 @@ class BlogController extends Controller
         // $response = $api->query(Predicates::at('document.type', 'blog'));
         $blog = $api->getByUID('blog',$blog);
 
-        SEOTools::setTitle('Jens van Wijhe');
-        SEOTools::setDescription('🎯 Specialist in e-commerce en web development. Eigenaar van Beter Bekend.');
-        // SEOTools::opengraph()->setUrl('https://www.jvw.dev');
-        // // SEOTools::setCanonical('https://codecasts.com.br/lesson');
-        // SEOTools::opengraph()->addProperty('type', 'profile')->setProfile([
-        //     'first_name' => 'Jens',
-        //     'last_name' => 'van Wijhe',
-        //     'username' => 'jensvanwijhe',
-        //     'gender' => 'male'
-        // ]);
-        // SEOTools::twitter()->setSite('@jensvanwijhe');
+      
+        $seo_title = collect($blog->data->seo_title)->first()->text;
+        $seo_description = collect($blog->data->seo_description)->first()->text;
+        $seo_image = $blog->data->seo_image->url;
 
-        // SEOTools::jsonLd()->addImage('https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4');
-        // SEOTools::jsonLd()->setType('Person');
+        SEOTools::setTitle($seo_title);
+        SEOTools::setDescription($seo_description);
+        SEOTools::opengraph()->setUrl('https://www.jvw.dev');
+        // SEOTools::setCanonical('https://codecasts.com.br/lesson');
+    
+        SEOTools::jsonLd()->addImage($seo_image);
+        SEOTools::opengraph()->addImage($seo_image);
+        SEOTools::jsonLd()->setType('blog');
+        SEOTools::jsonLd()->addValue('author', 'Jens van Wijhe');
+        SEOTools::jsonLd()->addValue('datePublished', strtotime($blog->first_publication_date));
 
 
         return view('blogs.show', [

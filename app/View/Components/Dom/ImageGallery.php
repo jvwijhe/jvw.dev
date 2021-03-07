@@ -8,11 +8,13 @@ class ImageGallery extends Component
 {
     public $slice;
     public $images;
+    public $title;
 
     public function __construct($slice)
     {
         $this->slice = $slice;
         $this->images = $slice->items;
+        $this->title = collect($slice->primary->name_of_the_gallery)->first();
     }
 
     /**
