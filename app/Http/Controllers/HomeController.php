@@ -39,6 +39,7 @@ class HomeController extends Controller
         ]);
         SEOTools::twitter()->setSite('@jensvanwijhe');
         SEOTools::jsonLd()->addImage($seo_image);
+        SEOTools::opengraph()->addImage($seo_image);
         SEOTools::jsonLd()->setType('Person');
 
 
