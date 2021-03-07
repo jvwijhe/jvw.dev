@@ -17,8 +17,18 @@ class HomeController extends Controller
 {
     public function show(){
 
-        SEOTools::setTitle('Jens van Wijhe');
-        SEOTools::setDescription('🎯 Specialist in e-commerce en web development. Eigenaar van Beter Bekend.');
+        $url = "https://jvwdev.cdn.prismic.io/api/v2";
+        $token = env("PRISMIC_ACCESS_TOKEN", false);
+        $api = Api::get($url, $token);
+        // $response = $api->query(Predicates::at('document.type', 'blog'));
+        $response = $api->query(Predicates::at('document.type', 'homepage'));
+        $document = $response->results[0];
+        $seo_title = collect($document->data->seo_title)->first()->text;
+        $seo_description = collect($document->data->seo_description)->first()->text;
+        $seo_image = $document->data->seo_image->url;
+
+        SEOTools::setTitle($seo_title);
+        SEOTools::setDescription($seo_description);
         SEOTools::opengraph()->setUrl('https://www.jvw.dev');
         // SEOTools::setCanonical('https://codecasts.com.br/lesson');
         SEOTools::opengraph()->addProperty('type', 'profile')->setProfile([
@@ -28,17 +38,11 @@ class HomeController extends Controller
             'gender' => 'male'
         ]);
         SEOTools::twitter()->setSite('@jensvanwijhe');
-
-        SEOTools::jsonLd()->addImage('https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4');
+        SEOTools::jsonLd()->addImage($seo_image);
         SEOTools::jsonLd()->setType('Person');
 
 
-        $url = "https://jvwdev.cdn.prismic.io/api/v2";
-        $token = env("PRISMIC_ACCESS_TOKEN", false);
-        $api = Api::get($url, $token);
-        // $response = $api->query(Predicates::at('document.type', 'blog'));
-        $response = $api->query(Predicates::at('document.type', 'homepage'));
-        $document = $response->results[0];
+       
         
         $blog = $api->getByUID('blog','hello-world');
 

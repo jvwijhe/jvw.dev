@@ -1,1 +1,1 @@
-<{{$heading}} class="mt-12 text-2xl font-medium text-gray-200">{{$content->text}}</{{$heading}}>
+<{{$heading}} class="mt-12 mb-1 text-2xl font-medium text-white">{{$content->text}}</{{$heading}}>
