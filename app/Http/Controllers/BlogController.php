@@ -20,21 +20,11 @@ class BlogController extends Controller
 
         SEOTools::setTitle('Blog | Jens van Wijhe');
         SEOTools::setDescription('I blog about web development.');
-        // SEOTools::opengraph()->setUrl('https://www.jvw.dev');
-        // // SEOTools::setCanonical('https://codecasts.com.br/lesson');
-        // SEOTools::opengraph()->addProperty('type', 'profile')->setProfile([
-        //     'first_name' => 'Jens',
-        //     'last_name' => 'van Wijhe',
-        //     'username' => 'jensvanwijhe',
-        //     'gender' => 'male'
-        // ]);
-        // SEOTools::twitter()->setSite('@jensvanwijhe');
-
-        // SEOTools::jsonLd()->addImage('https://avatars.githubusercontent.com/u/31101466?s=460&u=f941264a517f61521f72dae2383bcf2e24c4099c&v=4');
+        SEOTools::opengraph()->setUrl(url()->full());
         // SEOTools::jsonLd()->setType('Person');
 
 
-        $url = "https://jvwdev.cdn.prismic.io/api/v2";
+        $url = env("PRISMIC_URL", false);
         $token = env("PRISMIC_ACCESS_TOKEN", false);
         $api = Api::get($url, $token);
         $response = $api->query(Predicates::at('document.type', 'blog'));
@@ -47,11 +37,9 @@ class BlogController extends Controller
     
     public function show($blog){
 
-        $url = "https://jvwdev.cdn.prismic.io/api/v2";
+        $url = env("PRISMIC_URL", false);
         $token = env("PRISMIC_ACCESS_TOKEN", false);
         $api = Api::get($url, $token);
-        // $response = $api->query(Predicates::at('document.type', 'blog'));
-        // $response = $api->query(Predicates::at('document.type', 'blog'));
         $blog = $api->getByUID('blog',$blog);
 
       
@@ -61,7 +49,7 @@ class BlogController extends Controller
 
         SEOTools::setTitle($seo_title);
         SEOTools::setDescription($seo_description);
-        SEOTools::opengraph()->setUrl('https://www.jvw.dev');
+        SEOTools::opengraph()->setUrl(url()->full());
         // SEOTools::setCanonical('https://codecasts.com.br/lesson');
     
         SEOTools::jsonLd()->addImage($seo_image);

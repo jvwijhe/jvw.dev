@@ -6,12 +6,12 @@
 
         <ul class="flex">
             <li>
-            <a href="{{route('blogs.index')}}">
+            <a href="{{route('blogs.index')}}"  class="transition-all duration-500 ease-in-out transform hover:text-blue-500">
                 <span>Blog</span>
             </a>
             </li>
             <li class="ml-8">
-            <a href="{{route('pages.contact')}}">
+            <a href="{{route('pages.contact')}}" class="transition-all duration-500 ease-in-out transform hover:text-blue-500">
                 <span>Contact</span>
             </a>
             </li>

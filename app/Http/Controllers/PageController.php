@@ -17,7 +17,7 @@ class PageController extends Controller
 {
     public function contact(){
 
-        $url = "https://jvwdev.cdn.prismic.io/api/v2";
+        $url = env("PRISMIC_URL", false);
         $token = env("PRISMIC_ACCESS_TOKEN", false);
         $api = Api::get($url, $token);
         // $response = $api->query(Predicates::at('document.type', 'blog'));
