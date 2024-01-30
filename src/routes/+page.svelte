@@ -2,7 +2,7 @@
 	let links = [
 		{
 			name: 'Beter Bekend',
-			desciption: 'Digital e-commerce agency',
+			desciption: 'Founder of Beter Bekend. Digital e-commerce agency',
 			url: 'https://www.beterbekend.nl'
 		},
 
@@ -16,7 +16,13 @@
 			name: 'Bergfanaten',
 			desciption: 'Hiking community platform',
 			url: 'https://www.instagram.com/bergfanaten'
-		}
+		},
+    {
+      name: 'Kindernamen - iOs app',
+      desciption: 'iOs app for finding the perfect name for your child',
+      url: 'https://apps.apple.com/nl/app/kindernamen/id6474193585'
+    },
+    
 	];
 </script>
 
