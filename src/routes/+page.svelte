@@ -34,7 +34,8 @@
 
 		<div>
 			<a
-				href="/contact"
+				href="https://www.x.com/jensvanwijhe" 
+        rel="nofollow noopener"
 				class="bg-project-white-900 text-project-green-900 rounded-full py-3 px-7 font-pf text-base"
 				>How can I help?</a
 			>
