@@ -23,6 +23,7 @@ onMount(() => {
 <meta property="og:url" content="https://jvw.dev/">
 <meta property="og:title" content="Jens van Wijhe">
 <meta property="og:description" content="Software developer & e-commerce specialist. Building user-friendly applications, platforms and webshops.">
+<meta property="og:image" content="/jvw-dev.png">
 
 
 <!-- Twitter -->
@@ -30,6 +31,7 @@ onMount(() => {
 <meta property="twitter:url" content="https://jvw.dev/">
 <meta property="twitter:title" content="Jens van Wijhe">
 <meta property="twitter:description" content="Software developer & e-commerce specialist. Building user-friendly applications, platforms and webshops.">
+<meta property="twitter:image" content="/jvw-dev.png">
 
 <!-- index-->
 <meta name="robots" content="index, follow">
