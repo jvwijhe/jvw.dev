@@ -48,10 +48,10 @@
   <div class="container">
     <ul class="flex flex-col ">
       {#each links as link}
-        <li class="border-t border-project-white-200 py-5" >
-          <a href={link.url} rel="nofollow noopener" class="text-project-white-800 font-pf text-lg">{link.name}</a>
+        <a href={link.url} rel="nofollow noopener"  class="border-t border-project-white-200 py-5 trans" >
+          <span class="trans hover:text-project-white-900 text-project-white-800 font-pf text-lg">{link.name}</span>
           <p class="text-project-white-500 font-light">{link.desciption}</p>
-        </li>
+        </a>
     {/each}
     </ul>
     
