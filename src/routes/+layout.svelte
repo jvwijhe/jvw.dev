@@ -1,9 +1,10 @@
-<script lang="ts">
-    import type { LayoutData } from './$types';
+<script>
+    import { PUBLIC_GOOGLE_TAG_ID } from "$env/static/public";
+
     import '../css/tailwind.css'
 	import Header from '../components/molecules/Header.svelte';
 	import Footer from '../components/molecules/Footer.svelte';
-    export let data: LayoutData;
+    export let data;
     import AOS from 'aos';
     import 'aos/dist/aos.css'; // You can also use <link> for styles
 	import { onMount } from 'svelte';
@@ -11,7 +12,14 @@
 onMount(() => {
     AOS.init();
 });
-</script>
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', PUBLIC_GOOGLE_TAG_ID);
+  </script>
+
 <svelte:head>
 <!-- seo elements for Jens van Wijhe-->
 <title>Jens van Wijhe</title>
