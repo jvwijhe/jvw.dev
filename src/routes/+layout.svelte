@@ -1,5 +1,4 @@
 <script>
-    import { PUBLIC_GOOGLE_TAG_ID } from "$env/static/public";
 
     import '../css/tailwind.css'
 	import Header from '../components/molecules/Header.svelte';
@@ -13,11 +12,6 @@ onMount(() => {
     AOS.init();
 });
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', PUBLIC_GOOGLE_TAG_ID);
   </script>
 
 <svelte:head>
