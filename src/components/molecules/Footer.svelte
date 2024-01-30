@@ -1,4 +1,4 @@
-<footer class="py-6 md:py-12 bg-project-white-900">
+<footer class="py-6 md:py-12 bg-white">
 	<div class="container max-w-4xl flex items-center justify-between ">
 		<div class="w-full md:w-1/2">
 			<div class="grid grid-cols-2">
