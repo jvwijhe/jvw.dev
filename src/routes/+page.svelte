@@ -33,7 +33,7 @@
 		</h1>
 		<div class="prose">
 			<p class="text-project-white-800" data-aos="fade-in" data-aos-delay={500}>
-				Software developer & e-commerce specialist. Building user-friendly applications, platforms and
+				Entrepreneur, software developer & e-commerce specialist. Building user-friendly applications, platforms and
 				webshops.
 			</p>
 		</div>
