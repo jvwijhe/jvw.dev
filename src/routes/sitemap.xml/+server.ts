@@ -4,7 +4,10 @@ export async function GET() {
     <url>
         <loc>https://www.jvw.dev/</loc>
         <lastmod>2024-02-08T00:00:00.000Z</lastmod>
-</urlset>`; return new Response(sitemap, {
+	</url>
+</urlset>`;
+
+return new Response(sitemap, {
 		headers: {
 			'Cache-Control': 'max-age=600',
 			'Content-Type': 'application/xml',
