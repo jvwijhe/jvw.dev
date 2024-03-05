@@ -17,11 +17,21 @@
 			desciption: 'Hiking community platform',
 			url: 'https://www.instagram.com/bergfanaten'
 		},
-    {
-      name: 'Kindernamen - iOs app',
-      desciption: 'iOs app for finding the perfect name for your child',
-      url: 'https://apps.apple.com/nl/app/kindernamen/id6474193585'
-    },
+		{
+			name: 'Kindernamen - iOs app',
+			desciption: 'iOs app for finding the perfect name for your child',
+			url: 'https://apps.apple.com/nl/app/kindernamen/id6474193585'
+		},
+		{
+			name: 'Uniekebomen.nl',
+			desciption: 'uniekebomen.nl - Online tree and shrub webshop',
+			url: 'https://www.uniekebomen.nl'
+		},
+		{
+			name: 'Houtenspeelhuizen.nl',
+			desciption: 'Houtenspeelhuizen.nl',
+			url: 'https://www.houtenspeelhuizen.nl'
+		},
     
 	];
 </script>
