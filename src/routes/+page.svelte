@@ -31,8 +31,7 @@
 			name: 'Houtenspeelhuizen.nl',
 			desciption: 'Houtenspeelhuizen.nl',
 			url: 'https://www.houtenspeelhuizen.nl'
-		},
-    
+		}
 	];
 </script>
 
