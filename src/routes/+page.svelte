@@ -11,7 +11,6 @@
 			desciption: 'Local business listing platform',
 			url: 'https://www.veluweonderneemt.nl'
 		},
-
 		{
 			name: 'Bergfanaten',
 			desciption: 'Hiking community platform',

@@ -27,7 +27,6 @@ onMount(() => {
 <meta property="og:description" content="Software developer & e-commerce specialist. Building user-friendly applications, platforms and webshops.">
 <meta property="og:image" content="/jvw-dev.png">
 
-
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://jvw.dev/">
