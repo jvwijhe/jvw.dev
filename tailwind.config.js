@@ -1,20 +1,40 @@
 import defaultModifiers from '@tailwindcss/typography/src/styles';
 import colors from 'tailwindcss/colors';
 import defaultTheme from 'tailwindcss/defaultTheme';
+
+const screens = {
+  ...defaultTheme.screens,
+  '2xl': '1360px',
+};
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    screens,
+    container: {
+      center: true,
+      padding: '1rem',
+    },
     extend: {
       container: {
         center: true,
       },
+      
       fontFamily: {
 				// sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         sans: ['Klarheit Grotesk Medium', ...defaultTheme.fontFamily.sans],
         pf: ['pf-videotext', ...defaultTheme.fontFamily.sans],
 			},
       colors: {
+        brand: {
+          primary: '#004E48',
+          secondary: '#FDFF8F',
+          tertiary: '#D9FFD8',
+          background: 'rgba(0, 78, 72, 0.05)',
+          error: '#FF0000',
+        },
         project: {
           green: {
             900: 'rgba(25, 40, 40, 1)',
