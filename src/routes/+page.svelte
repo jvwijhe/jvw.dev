@@ -13,8 +13,8 @@
 		},
 		{
 			name: 'Bergfanaten',
-			desciption: 'Hiking community platform',
-			url: 'https://www.instagram.com/bergfanaten'
+		    desciption: 'Outdoorplatform',
+            url: 'https://bergfanten.nl'
 		},
 		{
 			name: 'Kindernamen - iOs app',
