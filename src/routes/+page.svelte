@@ -14,7 +14,7 @@
 		{
 			name: 'Bergfanaten',
 		    desciption: 'Outdoorplatform',
-            url: 'https://bergfanten.nl'
+            	url: 'https://bergfanaten.nl'
 		},
 		{
 			name: 'Kindernamen - iOs app',
