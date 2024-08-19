@@ -2,4 +2,4 @@
 
 </script>
 
-<a href="/" class="font-pf text-project-white-900 text-base">jvw.dev</a>
+<a href="/" class="font-pf text-project-green-900 text-base">jvw.dev</a>

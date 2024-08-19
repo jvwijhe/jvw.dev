@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="w-full md:w-1/2 text-right">
-			<span class="text-project-green-500 text-sm md:text-base">&copy; Jens van Wijhe - 2024</span>
+			<span class="text-project-green-500 text-sm md:text-base">&copy; jvw.dev - 2024</span>
 		</div>
 	</div>
 </footer>

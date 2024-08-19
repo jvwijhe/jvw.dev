@@ -35,49 +35,28 @@
 </script>
 
 <section class="py-24">
-	<div class="container max-w-4xl mx-auto space-y-7">
-		<h1 class="text-5xl text-project-white-900 font-pf" data-aos="fade-in" data-aos-delay={250}>
+	<div class="container max-w-4xl mx-auto space-y-12">
+		<h1 class="text-3xl text-project-green-900 font-pf" data-aos="fade-in" data-aos-delay={100}>
 			Jens van Wijhe
 		</h1>
 		<div class="prose">
-			<p class="text-project-white-800" data-aos="fade-in" data-aos-delay={500}>
-				Entrepreneur, software developer & e-commerce specialist. Building user-friendly applications, platforms and
-				webshops.
+			<p class="text-project-green-600 font-normal  prose" data-aos="fade-in" data-aos-delay={100}>
+				Hey, I am Jens, developer and tech enthusiast. I am passionate about building user-friendly applications, platforms and webshops using the latest technologies.
+			</p>
+			<p class="text-project-green-600 font-light  prose" data-aos="fade-in" data-aos-delay={100}>
+				I like to share and teach others about the things I learn. I write articles about web development, tech and more. I also create video tutorials on my <a href="https://www.youtube.com/channel/UCxVw-IYYEn5q9C8zxFW1gKg/">YouTube channel</a>.
 			</p>
 		</div>
 
 		<div>
 			<a
 				data-aos="fade-in"
-				data-aos-delay={750}
+				data-aos-delay={300}
 				href="https://www.x.com/jensvanwijhe"
 				rel="nofollow noopener"
-				class="bg-project-white-900 text-project-green-900 rounded-full py-3 px-7 font-pf text-base"
-				>How can I help?</a
+				class="bg-project-white-900 trans hover:bg-project-white-500 text-project-green-900 rounded-full py-3 px-7 font-pf text-base"
+				>Contact me</a
 			>
 		</div>
-	</div>
-</section>
-
-<section class="py-24">
-	<div class="container">
-		<ul class="flex flex-col">
-			{#each links as link, l}
-				<a
-					href={link.url}
-					rel="nofollow noopener"
-          data-aos="fade-in"
-          data-aos-delay={l * 250}
-          data-aos-once="true"
-
-					class="border-t border-project-white-200 py-5 trans"
-				>
-					<span class="trans hover:text-project-white-900 text-project-white-800 font-pf text-lg"
-						>{link.name}</span
-					>
-					<p class="text-project-white-500 font-light">{link.desciption}</p>
-				</a>
-			{/each}
-		</ul>
 	</div>
 </section>

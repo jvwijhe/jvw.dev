@@ -38,7 +38,7 @@ onMount(() => {
 <meta name="robots" content="index, follow">
 
 </svelte:head>
-<main class="min-h-screen bg-project-green-900">
+<main class="min-h-screen bg-white text-project-green-900">
     <Header />
     <slot />
     <Footer />

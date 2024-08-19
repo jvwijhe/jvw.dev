@@ -10,8 +10,8 @@ export default {
         center: true,
       },
       fontFamily: {
-				// sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        sans: ['Klarheit Grotesk Medium', ...defaultTheme.fontFamily.sans],
+				sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        // sans: ['Klarheit Grotesk Medium', ...defaultTheme.fontFamily.sans],
         pf: ['pf-videotext', ...defaultTheme.fontFamily.sans],
 			},
       colors: {
